@@ -1,15 +1,133 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.movie-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  list-style: none;
-  grid-gap: 1.5rem;
+html,
+body {
+  height: 100%;
+  background-color: #041629;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.movie-list img {
-  max-width: 100%;
+.search {
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  width: 99%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.box-search {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #041629;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.movie {
+  width: 300px;
+  height: 750px;
+  background-color: #061320;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 0 20px 20px 20px;
+  box-shadow: 0 0 20px rgba(12, 120, 150, 0.8);
+}
+
+.movie-image img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-blend-mode: screen;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, black),
+    color-stop(0.35, black),
+    color-stop(0.5, black),
+    color-stop(0.65, black),
+    color-stop(0.85, rgba(0, 0, 0, 0.6)),
+    color-stop(1-transparent)
+  );
+}
+
+.movie-image span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.movie-info {
+  color: #bbbbbb;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text-gradient {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #30cfd0 0%,
+    #01b4e4 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.date {
+  position: absolute;
+  display: flex;
+  padding-left: 200px;
+}
+.genres {
+  color: grey;
+  margin-top: 10px;
+}
+.movie-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.summary {
+  color: grey;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin: 5px 0;
 }

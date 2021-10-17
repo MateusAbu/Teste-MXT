@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import useDebounce from "./useDebounce";
+import React, { useState } from 'react';
+import useDebounce from './useDebounce';
+import './styles.css';
 
 const SearchInput = ({ value, onChange }) => {
   const [displayValue, setDisplayValue] = useState(value);
@@ -10,7 +11,16 @@ const SearchInput = ({ value, onChange }) => {
     debouncedChange(event.target.value);
   }
 
-  return <input type="search" value={displayValue} onChange={handleChange} />;
+  return (
+    <div className="box-search">
+      <input
+        class="search"
+        type="search"
+        value={displayValue}
+        onChange={handleChange}
+      />
+    </div>
+  );
 };
 
 export default SearchInput;
