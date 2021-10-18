@@ -1,0 +1,17 @@
+.text-gradient {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30cfd0 0%, #01b4e4 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .titleBar {
+    transform: scale(130%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    padding-left: 160px;
+  }
+  

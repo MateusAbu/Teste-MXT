@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+  }
+  
+  .movie {
+    width: 300px;
+    height: 750px;
+    background-color: #061320;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0 20px 20px 20px;
+    box-shadow: 0 0 20px rgba(12, 120, 150, 0.8);
+    cursor: pointer;
+  }
+  
+  .movie-image img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+  
+  .movie-image span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .movie-info {
+    transform: translateY(+10px);
+    color: #bbbbbb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    height: 300px;
+  }
+  
+  .vertical-fade {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+      to top,
+      #061320 1%,
+      transparent 100%
+    );
+    z-index: 10;
+    position: absolute;
+    transform: translateY(-1380px);
+  }
+  
+  .vertical-fade1 { 
+    color: black;
+    width: 2000px;
+    height: 1200px;
+    background: linear-gradient(
+      to top,
+      #298b83 1%,
+      transparent 100%
+    );
+    position: absolute;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .date {
+    position: absolute;
+    display: flex;
+    padding-left: 200px;
+  }
+  .genres {
+    color: grey;
+    margin-top: 10px;
+  }
+  .movie-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .summary {
+    color: grey;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin: 5px 0;
+    overflow: hidden;
+  }
